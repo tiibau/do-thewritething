@@ -1,0 +1,992 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(102, 71, 21, 0.856);
+  color: rgb(0, 0, 0, 1);
+}
+
+.titulo-pagina {
+  font-family: "Jim Nightshade", cursive;
+  color: black;
+}
+
+main {
+  background-color: rgba(247, 197, 122, 0.9);
+  color: rgb(0, 0, 0, 1);
+}
+
+footer {
+  background-color: rgb(82, 62, 31);
+  color: rgb(0, 0, 0, 1);
+  font-family: "Itim", cursive;
+}
+
+.logo a {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.navbar nav ul a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0, 1);
+}
+
+.topPage {
+  background-color: rgba(247, 197, 122, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.actions a {
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.registro input {
+  margin-right: 10px;
+}
+
+.lema {
+  background-color: rgba(247, 197, 122, 0.9);
+  font-family: "Kavivanar", cursive;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.125rem;
+}
+
+.curso-caligrafia h2 {
+  font-family: "Jim Nightshade", cursive;
+  font-size: 1.75rem;
+}
+
+.mapa-cursos h3 {
+  font-family: "Itim", cursive;
+  font-size: 1.75rem;
+}
+
+.contacto h2 {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.125rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.625rem;
+}
+
+.tituloColumna {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 4.5rem;
+}
+
+.tituloRecursos {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 1.875rem;
+}
+
+.titulos_recursos {
+  text-decoration: none;
+  color: black;
+}
+
+.eventos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 1.25rem;
+}
+
+.tituloMes {
+  text-align: center;
+}
+
+.calendario img {
+  max-width: 100%;
+  padding-left: 4.6875rem;
+}
+
+.topPage_eventos {
+  display: flex;
+  margin: 3rem;
+  gap: 23.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ultimosGanadores {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.25rem;
+  gap: 3.5rem;
+}
+
+.ultimosGanadores .texto {
+  max-width: 37.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.ultimosGanadores p {
+  margin: 3.5rem 0 3.375rem 0;
+}
+
+.ganadores-recuadro {
+  background-color: #f7c57a;
+  border: 0.0625rem solid #ccc;
+  padding: 1.25rem;
+  width: 18.75rem;
+  box-sizing: border-box;
+}
+
+.ganadores-recuadro h3 {
+  margin-top: 0;
+  text-align: center;
+  padding: 0.625rem;
+  background-color: #f7c57a;
+  border-bottom: 0.0625rem solid #ccc;
+}
+
+.ganadores-recuadro ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ganadores-recuadro li {
+  padding: 0.3125rem 0;
+  border-bottom: 0.0625rem solid #ccc;
+}
+
+.ganadores-recuadro li:last-child {
+  border-bottom: none;
+}
+
+.tituloCursos {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.375rem;
+  text-align: center;
+  max-width: 37.5rem;
+  margin: 1.8075rem auto 0;
+}
+
+.cursosSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.6875rem;
+  padding: 4.125rem 6.25rem 0 6.25rem;
+}
+
+.cursosSection article {
+  margin: 0.625rem 0;
+}
+
+.cursosSection button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.625rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.cursosSection p {
+  font-size: 1.1875rem;
+  font-family: "Itim", cursive;
+}
+
+.cursosSection > div {
+  background-color: #5e4f4f;
+  border: 0.0625rem solid #fdd7d7;
+  padding: 1.25rem;
+}
+
+.cursoCaligrafia {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 56.25rem;
+  padding: 1rem;
+  flex: 1;
+  justify-content: center;
+  margin: 6.375rem 0 6.375rem 6.375rem;
+}
+
+.cursoCaligrafia p {
+  padding: 1.125rem;
+}
+
+.cursoCaligrafia h2 {
+  padding: 1.125rem;
+}
+
+.cursoCaligrafia img {
+  width: 93.75rem;
+  height: 16.875rem;
+}
+
+.mapaCursos {
+  padding: 3.6875rem;
+}
+
+.mapaCursos iframe {
+  width: 100%;
+}
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+
+.sidebarsCursos {
+  background-color: #eaeaea;
+  padding: 1.875rem;
+  border: 0.0625rem solid #ccc;
+  margin-top: 1.25rem;
+}
+
+.sidebars h4 {
+  margin-top: 0;
+}
+
+.hashtags a,
+.nuevos-escritores a {
+  margin: 0.3125rem 0;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contactoSection {
+  width: 100%;
+  max-width: 37.5rem;
+  margin: 0;
+  padding: 1.25rem;
+}
+
+.contactoSection h2 {
+  margin-bottom: 1.25rem;
+}
+
+.contactoSection textarea {
+  width: 56.25rem;
+  height: 9.375rem;
+  margin-bottom: 1.25rem;
+}
+
+.contactoSection input[type="text"],
+.contactoSection input[type="email"] {
+  width: 60%;
+  margin-bottom: 0.625rem;
+  padding: 0.625rem;
+}
+
+.contactoSection input[type="checkbox"] {
+  margin: 0.625rem 0.625rem 0.625rem 0;
+}
+
+.contactoSection p {
+  margin: 0.625rem 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.contactoSection button {
+  display: block;
+  width: 30%;
+  padding: 0.625rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.625rem;
+}
+
+.contactoSection button:hover {
+  background-color: #0056b3;
+}
+
+.opinionesSection {
+  margin-top: 3.75rem;
+}
+
+.opiniones {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-evenly;
+}
+
+.opinion {
+  background-color: #597797;
+  font-family: "Josefin Slab", serif;
+  padding: 3.125rem;
+  margin: 3.75rem;
+  max-width: 30%;
+  max-height: 70%;
+}
+
+.acercaDeNosotros {
+  font-family: "Josefin Slab", serif;
+  display: flex;
+  margin-top: 5.75rem;
+  justify-content: space-between;
+  gap: 2.875rem;
+}
+
+.acercaContenido {
+  margin-left: 3.125rem;
+}
+
+.acercaDeNosotros h3 {
+  font-family: "Itim", cursive;
+  font-size: 1.75rem;
+}
+
+.acercaDeNosotros img {
+  max-width: 40%;
+  margin-right: 3.75rem;
+}
+
+.acercaDeNosotros p {
+  font-size: 1.5625rem;
+  padding-top: 2.5rem;
+}
+
+@media (max-width: 64rem) {
+  header {
+    background-color: #0056b3;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .publicidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f2f11af;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 50%;
+  }
+
+  .publicacionesUsuarios {
+    display: grid;
+    grid-template-columns: repeat(3, 38%);
+    gap: 1.25rem;
+    padding: 1.25rem;
+    justify-content: space-between;
+  }
+
+  .publicacion h4 {
+    font-size: 0.875rem;
+    text-align: start;
+  }
+
+  .publicacion p {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .sidebars {
+    display: none;
+  }
+
+  .recursos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .publicacionesUsuarios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .publicidad {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .curso-publicidad {
+    padding-right: 0;
+    padding-bottom: 1.875rem;
+  }
+  .recursos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 26.5625rem) {
+  .navbar nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    gap: 0.75rem;
+  }
+
+  .publicacionesUsuarios {
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .publicacion h4 {
+    font-size: 0.5rem;
+  }
+
+  .publicacion p {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .publicidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f2f11af;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 50%;
+  }
+
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .recurso {
+    padding: 0.9375rem;
+  }
+
+  .recurso img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .navbar nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    gap: 0.75rem;
+  }
+
+  .publicacionesUsuarios {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .publicidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f2f11af;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 50%;
+  }
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .recurso {
+    padding: 0.9375rem;
+  }
+
+  .recurso img {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 20rem) {
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .recurso {
+    padding: 0.625rem;
+  }
+
+  .recurso img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+
+  .publicacion h4 {
+    font-size: 1rem;
+  }
+
+  .publicacion p {
+    font-size: 0.625rem;
+  }
+
+  .publicidad img {
+    width: 100%;
+  }
+
+  .curso-publicidad h2 {
+    font-size: 1.2rem;
+  }
+
+  .curso-publicidad p {
+    font-size: 0.625rem;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 1.25rem;
+}
+
+.publicacionesRecientes {
+  margin-top: 3.125rem;
+  margin-left: 2.8125rem;
+  font-family: "Josefin Slab", serif;
+}
+
+.publicacionesUsuarios {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.publicacion {
+  border: 0.0625rem solid #000;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.publicacion h4 {
+  font-size: 1.5rem;
+  margin: 0.625rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.publicacion p {
+  font-size: 0.625rem;
+  font-family: "Itim", cursive;
+  text-align: justify;
+}
+
+.publicacionesUsuarios img {
+  max-width: 100%;
+  height: auto;
+}
+
+.publicacionesUsuarios article {
+  margin: 0.625rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.publicacionesUsuarios button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.publicacionesUsuarios > div {
+  background-color: #f2f2f2;
+  border: 0.0625rem solid #ccc;
+  padding: 1.25rem;
+}
+
+.sidebars-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebars {
+  background-color: #eaeaea;
+  padding: 1.25rem;
+  border: 0.0625rem solid #ccc;
+  margin-top: 1.25rem;
+}
+
+.sidebars h4 {
+  margin-top: 0;
+}
+
+.hashtags a,
+.nuevos-escritores a {
+  display: block;
+  margin: 0.3125rem 0;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.publicidadContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.5625rem;
+  padding-bottom: 3.125rem;
+  background-color: #f7c57a;
+}
+
+.publicidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f2f11af;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  width: 55%;
+}
+
+.curso-publicidad {
+  padding-right: 1.875rem;
+}
+
+.curso-publicidad h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.625rem;
+  font-family: "Josefin Slab", serif;
+}
+
+.curso-publicidad p {
+  margin-bottom: 1.25rem;
+  font-family: "Kavivanar", cursive;
+  font-size: 0.75rem;
+}
+
+.curso-publicidad a {
+  display: inline-block;
+  background-color: #90ccdf8e;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.curso-publicidad a:hover {
+  background-color: #0056b3;
+}
+
+.publicidad img {
+  border-radius: 0.4375rem;
+  width: 17.5rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .publicacionesUsuarios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .publicidad {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .curso-publicidad {
+    padding-right: 0;
+    padding-bottom: 1.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .publicacionesUsuarios {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebars-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sidebars {
+    margin-top: 0;
+  }
+
+  .publicidad {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .publicacion h4 {
+    font-size: 1.25rem;
+  }
+
+  .publicacion p {
+    font-size: 0.75rem;
+  }
+
+  .publicidad img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .publicacion h4 {
+    font-size: 1.125rem;
+  }
+
+  .publicacion p {
+    font-size: 0.75rem;
+  }
+
+  .publicidad img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .publicacionesUsuarios {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .publicacion {
+    padding: 10px;
+  }
+
+  .publicacion h4 {
+    font-size: 1rem;
+  }
+
+  .publicacion p {
+    font-size: 0.625rem;
+  }
+
+  .sidebars-container {
+    flex-direction: column;
+  }
+
+  .sidebars {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .publicidad {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .curso-publicidad h2 {
+    font-size: 1.2rem;
+  }
+
+  .curso-publicidad p {
+    font-size: 0.625rem;
+  }
+
+  .publicidad img {
+    width: 100%;
+  }
+
+  .curso-publicidad {
+    padding-right: 0;
+  }
+}
+
+.recursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.6875rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6.25rem;
+  margin: 5rem auto 0 auto;
+  max-width: 75rem;
+}
+
+.recurso {
+  border: 0.3125rem solid #352424;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recurso h3 {
+  font-family: "Kavivanar", cursive;
+}
+
+.recurso img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.recurso p {
+  font-size: 0.875rem;
+  font-family: "Itim", cursive;
+}
+
+.subtituloRecursos {
+  margin-top: 0;
+  padding: 10px 0;
+  background-color: rgba(247, 197, 122, 0.9);
+}
+
+@media (max-width: 1024px) {
+  .recursos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .recursos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .recurso {
+    padding: 15px;
+  }
+
+  .recurso img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .recurso {
+    padding: 15px;
+  }
+
+  .recurso img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .recurso {
+    padding: 10px;
+  }
+
+  .recurso img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+}
