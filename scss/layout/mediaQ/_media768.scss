@@ -1,0 +1,59 @@
+@media (max-width: 48rem) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .publicacionesUsuarios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .publicidad {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .curso-publicidad {
+    padding-right: 0;
+    padding-bottom: 1.875rem;
+  }
+  .recursos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .publicacionesUsuarios {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebars-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sidebars {
+    margin-top: 0;
+  }
+
+  .publicidad {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .recursos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

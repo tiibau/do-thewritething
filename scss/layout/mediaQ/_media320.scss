@@ -1,0 +1,113 @@
+@media (max-width: 20rem) {
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .recurso {
+    padding: 0.625rem;
+  }
+
+  .recurso img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+
+  .publicacion h4 {
+    font-size: 1rem;
+  }
+
+  .publicacion p {
+    font-size: 0.625rem;
+  }
+
+  .publicidad img {
+    width: 100%;
+  }
+
+  .curso-publicidad h2 {
+    font-size: 1.2rem;
+  }
+
+  .curso-publicidad p {
+    font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .publicacionesUsuarios {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .publicacion {
+    padding: 10px;
+  }
+
+  .publicacion h4 {
+    font-size: 1rem;
+  }
+
+  .publicacion p {
+    font-size: 0.625rem;
+  }
+
+  .sidebars-container {
+    flex-direction: column;
+  }
+
+  .sidebars {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .publicidad {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .curso-publicidad h2 {
+    font-size: 1.2rem;
+  }
+
+  .curso-publicidad p {
+    font-size: 0.625rem;
+  }
+
+  .publicidad img {
+    width: 100%;
+  }
+
+  .curso-publicidad {
+    padding-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .recursos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .recurso {
+    padding: 10px;
+  }
+
+  .recurso img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .recurso p {
+    font-size: 0.75rem;
+  }
+}

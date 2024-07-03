@@ -3,180 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/pluma-pluma(1).png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Itim&family=Jim+Nightshade&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kavivanar&display=swap");
     </style>
-    <title>DoTheWriteThing - Cursos</title>
+    <title>DoTheWriteThing | Cursos</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="../index.html"
-          ><img src="../assets/img/pluma-pluma(1).png" alt="logo" />
-          <h2 class="titulo-pagina">Do The Writething</h2></a
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-dark-subtle"
+    >
+      <div class="d-flex align-items-center">
+        <a
+          href="../index.html"
+          class="text-dark text-decoration-none d-flex align-items-center"
         >
+          <img src="../assets/img/pluma-pluma(1).png" alt="logo" class="me-2" />
+          <h2 class="m-0" style="font-family: 'Jim Nightshade', cursive">
+            Do The Writething
+          </h2>
+        </a>
       </div>
-      <div class="navbar">
-        <nav>
-          <ul>
-            <a href="../index.html">Home</a>
-            <a href="../pages/recursos.html">Recursos</a>
-            <a href="../pages/eventos.html">Eventos</a>
-            <a href="#">Cursos</a>
-            <a href="../pages/contactar.html">Contactar</a>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="../pages/recursos.html"
+              >Recursos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="../pages/eventos.html"
+              >Eventos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="../pages/contactar.html"
+              >Contactar</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <h2 class="lema">Lorem ipsum dolor sit amet.</h2>
-      <div class="topPage">
-        <div class="actions">
-          <a href="#"><img src="../assets/img/mas.png" alt="Escribir" /></a>
-          <a href="#">Escribir...</a>
+
+    <main class="container my-5">
+      <h1 class="text-center" style="font-family: 'PT Sans'">
+        Cualquiera puede escribir
+      </h1>
+      <div class="d-flex justify-content-between my-3">
+        <div class="d-flex align-items-center">
+          <a href="#"
+            ><img src="../assets/img/mas.png" alt="Escribir" class="me-2"
+          /></a>
+          <a href="#" class="text-dark text-decoration-none">Escribir...</a>
         </div>
-        <div class="registro">
-          <input class="iniciarsesion" type="button" value="Iniciar Sesion" />
-          <input class="registrarse" type="button" value="Registrarse" />
+        <div>
+          <input
+            class="btn btn-outline-primary me-2"
+            type="button"
+            value="Iniciar Sesion"
+          />
+          <input class="btn btn-primary" type="button" value="Registrarse" />
         </div>
       </div>
-      <h2 class="tituloCursos">
+      <h2 class="text-center my-5" style="font-family: 'Josefin Slab', serif">
         Aqui podras encontrar los cursos que necesitas para ser un gran
         escritor!
       </h2>
-      <div class="container">
-        <section class="cursosSection">
-          <div>
-            <article>
-              <h3>Curso de escritura creativa</h3>
-              <p>
+      <section class="row g-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Curso de escritura creativa</h3>
+              <p class="card-text">
                 En este curso podras Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Quidem optio debitis labore minima ipsa maxime
                 blanditiis repellendus molestias facere!
               </p>
               <button
-                class="buttonCursos"
+                class="btn btn-primary"
                 onclick="location.href='curso1.html'"
               >
                 Inscríbete ya
               </button>
-            </article>
+            </div>
           </div>
-          <div>
-            <article>
-              <h3>Curso de lectura critica</h3>
-              <p>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Curso de lectura critica</h3>
+              <p class="card-text">
                 El curso de lectura critica es para aquellos que Lorem ipsum
                 dolor sit amet consectetur adipisicing elit. Totam ullam
                 explicabo vel eum animi ipsa tenetur labore odio libero!
               </p>
               <button
-                class="buttonCursos"
+                class="btn btn-primary"
                 onclick="location.href='curso2.html'"
               >
                 Inscríbete ya
               </button>
-            </article>
+            </div>
           </div>
-          <div>
-            <article>
-              <h3>Curso de traduccion</h3>
-              <p>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Curso de traduccion</h3>
+              <p class="card-text">
                 Para aquellos que quieran escribir en ingles, este curso Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. Eveniet
                 voluptatibus pariatur optio tenetur quae facere a quibusdam?
                 Nulla ullam exercitationem cumque!
               </p>
               <button
-                class="buttonCursos"
+                class="btn btn-primary"
                 onclick="location.href='curso3.html'"
               >
                 Inscríbete ya
               </button>
-            </article>
+            </div>
           </div>
-          <div>
-            <article>
-              <h3>Curso de novela dramatica</h3>
-              <p>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Curso de novela dramatica</h3>
+              <p class="card-text">
                 En este curso uno puede pulir sus Lorem, ipsum dolor sit amet
                 consectetur adipisicing elit. Voluptatem, facilis totam
                 asperiores, dolorum voluptas voluptatibus magnam deserunt ipsam
                 quos, unde consequunte!
               </p>
               <button
-                class="buttonCursos"
+                class="btn btn-primary"
                 onclick="location.href='curso4.html'"
               >
                 Inscríbete ya
               </button>
-            </article>
+            </div>
           </div>
-          <div>
-            <article>
-              <h3>Curso de ciencia ficcion</h3>
-              <p>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Curso de ciencia ficcion</h3>
+              <p class="card-text">
                 El curso ideal para Lorem, ipsum dolor sit amet consectetur
                 adipisicing elit. Voluptatem, facilis totam asperiores, dolorum
                 voluptas voluptatibus magnam deserunt ipsam quos, unde
                 consequunte!
               </p>
               <button
-                class="buttonCursos"
+                class="btn btn-primary"
                 onclick="location.href='curso4.html'"
               >
                 Inscríbete ya
               </button>
-            </article>
+            </div>
           </div>
-          <div>
-            <article>
-              <h3>Curso de poesia</h3>
-              <p>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Curso de poesia</h3>
+              <p class="card-text">
                 Para los amantes de la poesia, ipsum dolor sit amet consectetur
                 adipisicing elit. Voluptatem, facilis totam asperiores, dolorum
                 voluptas voluptatibus magnam deserunt ipsam quos, unde
                 consequunte!
               </p>
               <button
-                class="buttonCursos"
+                class="btn btn-primary"
                 onclick="location.href='curso4.html'"
               >
                 Inscríbete ya
               </button>
-            </article>
+            </div>
           </div>
-        </section>
-      </div>
-      <div class="sidebarContainer">
-        <aside class="sidebarsCursos">
-          <h4>Etiquetas</h4>
-          <p class="hashtags">
-            <a href="">#Hashtag1</a>
-            <a href="">#Hashtag2</a>
-            <a href="">#Hashtag3</a>
-            <a href="">#Hashtag4</a>
-            <a href="">#Hashtag5</a>
-          </p>
-        </aside>
-        <aside class="sidebarsCursos">
-          <h4>Nuevos escritores</h4>
-          <ul class="nuevos-escritores">
-            <li><a href="">lorem ipsum</a></li>
-            <li><a href="">ipsum lorem</a></li>
-            <li><a href="">lipsum iorem</a></li>
-            <li><a href="">iorem lipsum</a></li>
-            <li><a href="">mipsum lorem</a></li>
-          </ul>
-        </aside>
-      </div>
-      <section class="info-curso">
-        <div class="cursoCaligrafia">
-          <img src="../assets/img/caligrafia.jpeg" alt="Imagen del curso" />
+        </div>
+      </section>
+
+      <section class="my-5">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <img
+            src="../assets/img/caligrafia.jpeg"
+            alt="Imagen del curso"
+            class="img-fluid me-3"
+            style="max-width: 50%"
+          />
           <div>
-            <h2>CURSO DE CALIGRAFIA GRATUITO</h2>
-            <p>
+            <h2 class="h4 text-center">CURSO DE CALIGRAFIA GRATUITO</h2>
+            <p class="text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               non nulla sit amet nisl tempus convallis quis ac lectus lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
@@ -184,11 +223,11 @@
             </p>
           </div>
         </div>
-        <div class="mapaCursos">
-          <h3>Mapa de Cursos</h3>
+        <div class="text-center">
+          <h3 class="h5 mb-3">Mapa de Cursos</h3>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.69806972392!2d-58.394251724916195!3d-34.58650557296042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa24c8efcad%3A0x4a52ca8190703ddc!2sCentro%20Cultural%20Recoleta!5e0!3m2!1ses-419!2sar!4v1717533023709!5m2!1ses-419!2sar"
-            width="600"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.69806972392!2d-58.394251724916195!3d-34.58650557296042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa24c8efcad%3A0x4a52ca8190703ddc!2sCentro%20Cultural%20Recoleta!5e0!3m2!1ses-419!2sar!4v1717533023709!5m2!1seses-419!2sar!4v1717533023709!5m2!1ses-419!2sar"
+            width="100%"
             height="450"
             style="border: 0"
             allowfullscreen=""
@@ -198,42 +237,32 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-container">
-        <div class="redes-sociales">
-          <p>Conoce todas nuestras redes sociales...</p>
-        </div>
-        <div class="tituloColumna">
-          <h4>Columna 1</h4>
-          <h4>Columna 2</h4>
-          <h4>Columna 3</h4>
-          <h4>Columna 4</h4>
-        </div>
-        <div class="column">
-          <p>Texto de la fila 1</p>
-          <p>Texto de la fila 2</p>
-          <p>Texto de la fila 3</p>
-          <p>Texto de la fila 4</p>
-        </div>
-        <div class="column">
-          <p>Texto de la fila 1</p>
-          <p>Texto de la fila 2</p>
-          <p>Texto de la fila 3</p>
-          <p>Texto de la fila 4</p>
-        </div>
-        <div class="column">
-          <p>Texto de la fila 1</p>
-          <p>Texto de la fila 2</p>
-          <p>Texto de la fila 3</p>
-          <p>Texto de la fila 4</p>
-        </div>
-        <div class="column">
-          <p>Texto de la fila 1</p>
-          <p>Texto de la fila 2</p>
-          <p>Texto de la fila 3</p>
-          <p>Texto de la fila 4</p>
-        </div>
-      </div>
+
+    <footer class="bg-light text-center py-3">
+      <p class="mb-0">
+        &copy; 2023 DoTheWriteThing. Todos los derechos reservados.
+      </p>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="../pages/recursos.html"
+            >Recursos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="../pages/eventos.html">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="../pages/contactar.html"
+            >Contactar</a
+          >
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
